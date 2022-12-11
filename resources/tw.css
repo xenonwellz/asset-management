@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-nav {
+  @apply bg-black/80 text-white;
+}
+
+.device {
+  @apply bg-black/25 shadow rounded-md ring ring-black/80 p-3 py-5;
+}
+
+.simulate > div {
+  @apply p-2;
+}
+
+.animate-spin-1 {
+  animation: spin1 1s linear infinite;
+}
+
+.animate-spin-2 {
+  animation: spin1 0.8s linear infinite;
+}
+
+.animate-spin-3 {
+  animation: spin1 0.6s linear infinite;
+}
+
+.animate-spin-4 {
+  animation: spin1 0.4s linear infinite;
+}
+
+.animate-spin-5 {
+  animation: spin1 0.2s linear infinite;
+}
+
+@keyframes spin1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.load-btn:disabled > svg {
+  display: block;
+}

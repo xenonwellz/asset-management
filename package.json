@@ -1,0 +1,26 @@
+{
+  "name": "tailwind_starter_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./resources/tw.css -o ./css/bundle/app.css --watch",
+    "build": "tailwindcss -i ./resources/tw.css -o ./css/bundle/app.css",
+    "webpack": "webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "ipfs-api": "^26.1.2",
+    "ipfs-http-client": "^59.0.0",
+    "web3.storage": "^4.4.0"
+  }
+}
